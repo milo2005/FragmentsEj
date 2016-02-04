@@ -28,4 +28,9 @@ public class ContenidoAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return data.size();
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return "Tab "+position;
+    }
 }
